@@ -4,6 +4,7 @@ int main() {
     int choice;
 
     while (1) {
+	    //Display Mrnu option
         printf("\nMenu:\n");
         printf("1. Reverse a string\n");
         printf("2. Concatenate two strings\n");
@@ -43,7 +44,7 @@ int main() {
            	 char a[10];
 	         char b[10];
 	         int i,j;
-			 fflush(stdin); 
+			 fflush(stdin); //clear input buffer
 	         printf("Enter String : ");
 	         gets(a);
 	         printf("\nEnter String : ");
@@ -55,7 +56,7 @@ int main() {
            		a[i]=b[j];
 		         i++;
 	           }
-	        a[i]='\0';
+	        a[i]='\0';//null-terminate concatenated string
 			printf("Merge string : %s", a);
 			} 
 			else if (choice == 3)
